@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+    <body>
+        <video id="video-background" src="/pexels-oleg-lehnitsky-8333185 (1080p).mp4" autoplay muted loop></video>
+        <div class="container">
+            <form onsubmit=" validateForm(event)">
+                <h1>VALIDATION FORM</h1>
+                <div class="form">
+                    <input id="username" type="text" placeholder="Username" oninput="validateUsername()">
+                    <span id="usernameError" class="error"></span><br>
+
+                    <input id="email" type="email" placeholder="Email" oninput="validateEmail()">
+                    <span id="emailError" class="error"></span><br>
+
+                    <input id="contact" type="text" placeholder="Contact Number" oninput="validateContact()">
+                    <span id="contactError" class="error"></span><br>
+    
+                    <input id="password" type="password" placeholder="Password" oninput="validatePassword()">
+                    <span id="passwordError" class="error"></span><br>
+    
+                    <input id="confirmpassword" type="password" placeholder="Confirm Password" oninput="validateConfirmPassword()">
+                    <span id="confirmpasswordError" class="error"></span><br>
+    
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </body>
+    <script src="script.js"></script>
+</html>
